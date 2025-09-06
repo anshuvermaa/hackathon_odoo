@@ -51,3 +51,33 @@ backend/
 ├── tsconfig.json
 └── .env
 ```
+# ⚡ How to Run Backend  
+
+### Prerequisites  
+- Node.js (v18+)  
+- npm or pnpm  
+- PostgreSQL/MySQL (for production; SQLite can be used for MVP)  
+
+---
+
+### 🛠️ Setup & Commands  
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/anshuvermaa/hackathon_odoo
+cd ecofinds/backend
+
+# 2. Install dependencies
+npm install
+# or
+pnpm install
+
+# 3. Create environment file
+cp .env.example .env
+# → Update .env with DB connection, PORT, JWT_SECRET
+
+# 4. Run database migrations (if using Prisma)
+npx prisma migrate dev --name init
+
+# 5. Start backend server in development
+npm run dev
