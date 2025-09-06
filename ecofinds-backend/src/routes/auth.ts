@@ -14,7 +14,7 @@ function validate(schema: z.ZodSchema<any>) {
       next();
     } catch (err) {
         if (err instanceof ZodError) {
-            return res.status(400).json({ errors: err.format() });
+            return res.status(400).json({ errors: z.treeifyError(err) });
           }
           return res.status(500).json({ message: 'Internal Server Error' });
     }
