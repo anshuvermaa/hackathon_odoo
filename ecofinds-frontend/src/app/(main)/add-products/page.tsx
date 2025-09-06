@@ -23,7 +23,7 @@ export default function AddProductPage() {
     <div>
       <h1 className="text-3xl font-bold mb-6">Add a New Product</h1>
       {/* <AddProductForm /> */}
-      <p>Your "Add Product" form will go here.</p>
+      <p>Your Add Product form will go here.</p>
     </div>
   );
 }

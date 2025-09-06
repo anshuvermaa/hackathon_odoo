@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link href="/" className="text-gray-600 hover:text-green-600">Home</Link>
           {user ? (
             <>
-              <Link href="/add-product" className="text-gray-600 hover:text-green-600">Add Product</Link>
+              <Link href="/add-products" className="text-gray-600 hover:text-green-600">Add Product</Link>
               <Link href="/favorites" className="text-gray-600 hover:text-green-600">Favorites</Link>
               <Link href="/orders" className="text-gray-600 hover:text-green-600">My Orders</Link>
               <Button onClick={handleLogout} variant="outline">Logout</Button>
